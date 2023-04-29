@@ -1,5 +1,5 @@
 export enum Meal {
-    Vegetable,
-    Coffee,
-    Rice,
+    Vegetable = "Vegetable",
+    Coffee = "Coffee",
+    Rice = "Rice",
 }

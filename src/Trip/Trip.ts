@@ -5,8 +5,10 @@ export class Trip {
     private departure: string;
     private Return?: string;
     private flight: Flight[] = [];
-    private date: DateTime | undefined;
-    constructor(departure: string, Return?: string) {
+    constructor(private datetime: DateTime,departure: string, Return?: string) {
         this.departure = departure;
+    }
+    addFlight(flight: Flight) {
+        return this.flight.push(flight);
     }
 }
